@@ -1,0 +1,1103 @@
+$font: 'Archivo', sans-serif;
+
+.main-container{
+    background: #002947;
+    position: absolute;
+    min-width: 412px;
+    min-height: 115vh;
+    left:370px;
+    font-family: $font;
+   
+    >.navbar{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 44px;
+
+        >.title{
+            font: 600;
+            color: white;
+            font-size: 20px;
+           margin-left: -40px;
+            display: grid;
+            place-items: center;
+
+        }
+        >.time-left{
+            width: 86px;
+            height: 23px;
+            border-radius: 4px;
+            padding: 10px;
+            background: #024B5C;
+            margin-right: -40px;
+            color: white;
+            font-size: 12px;
+            font-weight: 400;
+            display: grid;
+            place-items: center;
+        }
+        >.nav-icon{
+           display: grid;
+           place-items: center;
+            >i{
+                font-size: 20px;
+            }
+           }
+    }
+    >.teams {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        justify-content: space-around;
+        margin-left: 20px;
+        margin-right: 20px;
+
+        >.first-team {
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+            >.flag{
+                border-radius: 4px;
+                 width: 40.68px;
+                 height: 21px;
+                 border: white;
+                 box-sizing:content-box;
+            }
+                 >span>p{
+                    margin-left: -105px;
+                    color: white;
+                 }
+                 >.player-no{
+                    width: 32px;
+                    height: 16px;
+                    background-color: rgba(255, 255, 255, 0.3);
+                    color: white;
+                    padding: 2px;
+                    border-radius: 2px;
+                    display: grid;
+                    place-items: center;
+                    
+                 }
+        }
+        >.second-team {
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+            >.flag{
+                border-radius: 4px;
+                 width: 40.68px;
+                 height: 21px;
+                 
+                 }
+             >span>p{
+                margin-left: -100px;
+                color: white;
+             }
+             >.player-no{
+                width: 32px;
+                height: 16px;
+                background-color: rgba(0, 0, 0, 0.3);
+                color:white;
+                padding: 2px;
+                border-radius: 2px;
+                display: grid;
+                place-items: center;
+                
+             }
+        }
+    }
+    >.info-bar{
+        display: flex;
+        position: absolute;
+        left: 20px;
+        right: 10px;
+        justify-content: space-between;
+        justify-items: center;
+
+        >.credits-left{
+            width: 82px;
+            height: 40px;
+            border-radius: 4px;
+            background-color: #024B5C;
+            display: grid;
+            place-items: center;
+            >label{
+            
+                font-family: 'Archivo';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 10px;
+                line-height: 17px;
+                color: #FFFFFF;
+
+
+            }>input{
+                height: 8px;
+                width: 70px;
+                
+                }
+            
+        }
+        >.player-left{
+            width: 82px;
+            height: 40px;
+            border-radius: 4px;
+            background-color: #024B5C;
+            display: grid;
+            place-items: center;
+            >label{
+            
+                font-family: 'Archivo';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 10px;
+                line-height: 17px;
+                color: #FFFFFF;
+
+
+            }>input{
+                height: 8px;
+                width: 70px;
+            }
+                
+        }
+        >.glider{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            border-radius: 34px;
+            width: 140px;
+            height: 40px;
+            background-color: rgba(0, 0, 0, 0.3);
+
+            >#list{
+                border-radius: 34px;
+                width: 69px;
+                height: 38px;  
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }:hover{
+                cursor: pointer;
+                border:solid;
+                box-sizing:border-box;
+                border-color: rgb(49, 49, 199);
+            }
+            >#pitch{
+                border-radius: 34px;
+                width: 69px;
+                height: 38px; 
+                display: flex;
+                justify-content: center;
+                align-items: center; 
+            }:hover{
+                cursor: pointer;
+                border:solid;
+                box-sizing:border-box;
+                border-color: rgb(49, 49, 199);
+            }
+
+            >.active{
+                border-radius: 34px;
+                width: 69px;
+                height: 38px;
+                background-color: #E47C29;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                box-sizing: border-box;
+
+    
+            }:hover{
+                cursor: pointer;
+                border:solid;
+                box-sizing:border-box;
+                border-color: rgb(49, 49, 199);
+            }
+            
+            
+        }
+      
+        
+    }
+    >.player-table{
+       
+        .table{
+            position: relative;
+            top: 60px;
+            left: 20px;
+            width: 370px;
+            min-height: 419px;
+            border-radius: 6px;
+           background-color: #ffffff;
+           border-collapse: collapse;
+           overflow: hidden;
+           
+           .table-heading{
+            position: absolute;
+            width: 343px;
+            height: 22px;
+            left: 6px;
+            top: 6px;
+            background: #E4E4E4;
+            border-radius: 45px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            >th:first-child{
+                margin-left: 10px;
+                margin-right: 50px;
+            }
+            >th:nth-child(3){
+                margin-right: 10px;
+              
+            }
+            >th{
+                font-style: normal;
+                font-weight: 500;
+                font-size: 8px;
+                color: #474747;
+                
+            }
+           }
+           
+          tbody{
+           position:absolute;
+           left: 10px;
+           right: 10px;
+           top: 50px;
+           
+        //    background-color: #cf2828;
+           overflow-y: scroll;
+           display: flex;
+           justify-content: space-between;
+           flex-direction: column;
+           -webkit-overflow-scrolling: none;
+         }
+
+           
+            td,img{
+                height: 40px;
+                width: 30px;
+                background-image: none;
+                background: none;
+            }
+            tbody>tr{
+           
+                display: flex;
+                justify-content: space-between;
+               
+
+                td:nth-child(2){
+                    display: flex;
+                    align-items: center;
+                    margin-left: 80px;
+                }
+                td:nth-child(3){
+                    display: flex;
+                    align-items: center;
+                    margin-left: 40px;
+                }
+                td:nth-child(4){
+                    
+                    display: flex;
+                    align-items: center;
+                }
+                 }
+        }
+    }
+    footer{
+        position: absolute;
+        right: 20px;
+        bottom: 10px;
+        display: flex;
+        align-items: end;
+        gap: 40px;
+        >p:first-child{
+            height: 40px;
+            width: 40px;
+            background-color: #E47C29;
+            border-radius: 20px;
+            display: grid;
+            place-items: center;
+           margin-bottom: -1px;
+           cursor: pointer;
+           
+        }
+        button{
+            background-color: #E47C29;
+            height: 40px;
+            width: 158px;
+            float: inline-end;
+            border: none;
+            font-size: 16px;
+            font-weight: 500;
+            color: #ffffff;
+            cursor: pointer;
+            border-radius: 4px;
+            
+        }:hover{
+            color: #0f0f0f;
+            background-color: #cf6610;
+        }
+    }
+    .field {
+        
+        min-height: 419px;
+        background-color: #2a711f;
+        border-radius: 6px;
+        position: relative;
+        left: 20px;
+        left: 20px;
+        width: 370px;
+        top: 60px;
+        display: none;
+
+        .field-strip1{
+        
+            position: absolute;
+            width: 34px;
+            height: 419px;
+            left: 24px;
+            top: 0px;
+            z-index: 1;
+            background: #1E6413;
+        }
+        .field-strip2{
+        
+            position: absolute;
+            width: 34px;
+            height: 419px;
+            left: 92px;
+            top: 0px;
+            z-index: 1;
+            background: #1E6413;
+        }
+        .field-strip3{
+        
+            position: absolute;
+            width: 34px;
+            height: 419px;
+            left: 160px;
+            top: 0px;
+            z-index: 1;
+            background: #1E6413;
+        }
+        .field-strip4{
+        
+            position: absolute;
+            width: 34px;
+            height: 419px;
+            left: 228px;
+            top: 0px;
+            z-index: 1;
+            background: #1E6413;
+        }
+        .field-strip5{
+        
+            position: absolute;
+            width: 34px;
+            height: 419px;
+            left: 296px;
+            top: 0px;
+            z-index: 1;
+            background: #1E6413;
+        }
+        .boundary{
+             box-sizing: border-box;
+
+             position: absolute;
+             width: 276px;
+             height: 357px;
+             left: 39px;
+             top: 31px;
+             z-index: 2;
+             opacity: 0.1;
+             border: 1px solid #FFFFFF;
+             border-radius: 89px;
+             .field-pitch{
+               position: absolute;
+               width: 51px;
+               height: 118px;
+               left: 112px;
+               top: 116px;
+               z-index: 2;
+               background: #C9A267;
+               .wicket{
+                position: absolute;
+                left: 0%;
+                right: 0%;
+                top: 99.81%;
+                bottom: -19.11%;
+                 z-index: 2;
+                background: #FFFFFF;
+                 transform: matrix(1, 0, 0, -1, 0, 0);
+               }
+             }
+        }
+        .teamPlayer{
+            z-index: 3;
+            .wicketkeeper{
+                z-index: 3;
+                display: flex;
+                flex-direction: column;
+                justify-items: center;
+                position: absolute;
+                top: -30px;
+                left: 120px;
+                img{
+                    
+                    position: absolute;
+                    width: 31px;
+                    height: 40px;
+                    left: 20px;
+                    top: 4px;
+                }
+                p{
+                    position: absolute;
+                    width: 60px;
+                    height: 17px;
+                    left: 5px;
+                    top: 33px;
+
+                    background: #FFFFFF;
+                    border-radius: 3px;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 8px;
+                    line-height: 9px;
+
+                     justify-content: center;
+                    display: flex;
+                     align-items: center;
+                     text-align: center;
+
+                     color: #002947;
+                }
+                span{
+                    position: absolute;
+                    width: 15px;
+                    height: 9px;
+                    left: 27px;
+                    top: 60px;
+                    
+                    font-family: 'Archivo';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 8px;
+                    line-height: 9px;
+                    
+                    
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                    
+                    color: #FFFDFD;
+                    
+                }
+               
+            }
+        .batsman{
+            z-index: 3;
+                display: flex;
+                flex-direction: column;
+                justify-items: center;
+                
+            .player1{
+                z-index: 3;
+                position: absolute;
+                top: 130px;
+
+               
+                img{
+                    position: absolute;
+                    width: 31px;
+                    height: 40px;
+                    left: 20px;
+                    top: 4px;
+                }
+                p{
+                    position: absolute;
+                    height: 17px;
+                    left: 5px;
+                    top: 33px;
+                    width: 60px;
+                    background: #FFFFFF;
+                    border-radius: 3px;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 8px;
+                    line-height: 9px;
+   
+                     justify-content: center;
+                    display: flex;
+                     align-items: center;
+                     text-align: center;
+    
+                     color: #002947;
+                }
+                span{
+                    position: absolute;
+                    width: 15px;
+                    height: 9px;
+                    left: 27px;
+                    top: 60px;
+                    
+                    font-family: 'Archivo';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 8px;
+                    line-height: 9px;
+                    
+                    
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                    
+                    color: #FFFDFD;
+                    
+                }
+            }
+            .player2{
+                z-index: 3;
+                position: absolute;
+                top: 130px;
+                left:70px;
+                img{
+                    position: absolute;
+                    width: 31px;
+                    height: 40px;
+                    left: 20px;
+                    top: 4px;
+                }
+                p{
+                    position: absolute;
+                    height: 17px;
+                    left: 5px;
+                    top: 33px;
+                    width: 60px;
+                    background: #FFFFFF;
+                    border-radius: 3px;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 8px;
+                    line-height: 9px;
+    
+                     justify-content: center;
+                    display: flex;
+                     align-items: center;
+                     text-align: center;
+    
+                     color: #002947;
+                }
+                span{
+                    position: absolute;
+                    width: 15px;
+                    height: 9px;
+                    left: 27px;
+                    top: 60px;
+                    
+                    font-family: 'Archivo';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 8px;
+                    line-height: 9px;
+                    
+                    
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                    
+                    color: #FFFDFD;
+                    
+                }
+            }
+              
+            
+            .player3{
+                z-index: 3;
+                position: absolute;
+                top: 130px;
+                left:140px;
+                img{
+                    position: absolute;
+                    width: 31px;
+                    height: 40px;
+                    left: 20px;
+                    top: 4px;
+                }
+                p{
+                    position: absolute;
+                    height: 17px;
+                    left: 5px;
+                    top: 33px;
+                    width: 60px;
+                    background: #FFFFFF;
+                    border-radius: 3px;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 8px;
+                    line-height: 9px;
+  
+                     justify-content: center;
+                    display: flex;
+                     align-items: center;
+                     text-align: center;
+    
+                     color: #002947;
+                }
+                span{
+                    position: absolute;
+                    width: 15px;
+                    height: 9px;
+                    left: 27px;
+                    top: 60px;
+                    
+                    font-family: 'Archivo';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 8px;
+                    line-height: 9px;
+                    
+                    
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                    
+                    color: #FFFDFD;
+                    
+                }
+               }
+               .player4{
+                z-index: 3;
+                position: absolute;
+                top: 130px;
+                left:210px;
+                img{
+                    position: absolute;
+                    width: 31px;
+                    height: 40px;
+                    left: 20px;
+                    top: 4px;
+                }
+                p{
+                    position: absolute;
+                    height: 17px;
+                    left: 5px;
+                    top: 33px;
+                    width: 60px;
+                    background: #FFFFFF;
+                    border-radius: 3px;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 8px;
+                    line-height: 9px;
+  
+                     justify-content: center;
+                    display: flex;
+                     align-items: center;
+                     text-align: center;
+    
+                     color: #002947;
+                }
+                span{
+                    position: absolute;
+                    width: 15px;
+                    height: 9px;
+                    left: 27px;
+                    top: 60px;
+                    
+                    font-family: 'Archivo';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 8px;
+                    line-height: 9px;
+                    
+                    
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                    
+                    color: #FFFDFD;
+                    
+                }
+               }
+               .player5{
+                z-index: 3;
+                position: absolute;
+                top: 130px;
+                left:280px;
+                img{
+                    position: absolute;
+                    width: 31px;
+                    height: 40px;
+                    left: 20px;
+                    top: 4px;
+                }
+                p{
+                    position: absolute;
+                    height: 17px;
+                    left: 5px;
+                    top: 33px;
+                    width: 60px;
+                    background: #FFFFFF;
+                    border-radius: 3px;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 8px;
+                    line-height: 9px;
+  
+                     justify-content: center;
+                    display: flex;
+                     align-items: center;
+                     text-align: center;
+    
+                     color: #002947;
+                }
+                span{
+                    position: absolute;
+                    width: 15px;
+                    height: 9px;
+                    left: 27px;
+                    top: 60px;
+                    
+                    font-family: 'Archivo';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 8px;
+                    line-height: 9px;
+                    
+                    
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                    
+                    color: #FFFDFD;
+                    
+                }
+               }
+            }
+            .bowler{
+                z-index: 3;
+                display: flex;
+                flex-direction: column;
+                justify-items: center;
+                
+            .player1{
+                z-index: 3;
+                position: absolute;
+                top: 340px;
+                left:70px;
+               
+                img{
+                    position: absolute;
+                    width: 31px;
+                    height: 40px;
+                    left: 20px;
+                    top: 4px;
+                }
+                p{
+                    position: absolute;
+                    height: 17px;
+                    left: 5px;
+                    top: 33px;
+                    width: 60px;
+                    background: #FFFFFF;
+                    border-radius: 3px;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 8px;
+                    line-height: 9px;
+                     justify-content: center;
+                    display: flex;
+                     align-items: center;
+                     text-align: center;
+    
+                     color: #002947;
+                }
+                span{
+                    position: absolute;
+                    width: 15px;
+                    height: 9px;
+                    left: 27px;
+                    top: 60px;
+                    
+                    font-family: 'Archivo';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 8px;
+                    line-height: 9px;
+                    
+                    
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                    
+                    color: #FFFDFD;
+                    
+                }
+            }
+            .player2{
+                z-index: 3;
+                position: absolute;
+                top: 340px;
+                left:140px;
+                img{
+                    position: absolute;
+                    width: 31px;
+                    height: 40px;
+                    left: 20px;
+                    top: 4px;
+                }
+                p{
+                    position: absolute;
+                    height: 17px;
+                    left: 5px;
+                    top: 33px;
+                    width: 60px;
+                    background: #FFFFFF;
+                    border-radius: 3px;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 8px;
+                    line-height: 9px;
+    
+                     justify-content: center;
+                    display: flex;
+                     align-items: center;
+                     text-align: center;
+    
+                     color: #002947;
+                }
+                span{
+                    position: absolute;
+                    width: 15px;
+                    height: 9px;
+                    left: 27px;
+                    top: 60px;
+                    
+                    font-family: 'Archivo';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 8px;
+                    line-height: 9px;
+                    
+                    
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                    
+                    color: #FFFDFD;
+                    
+                }
+            }
+              
+            
+            .player3{
+                z-index: 3;
+                position: absolute;
+                top: 340px;
+                left:210px;
+                img{
+                    position: absolute;
+                    width: 31px;
+                    height: 40px;
+                    left: 20px;
+                    top: 4px;
+                }
+                p{
+                    position: absolute;
+                    height: 17px;
+                    left: 5px;
+                    top: 33px;
+                    width: 60px;
+                    background: #FFFFFF;
+                    border-radius: 3px;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 8px;
+                    line-height: 9px;
+  
+                     justify-content: center;
+                    display: flex;
+                     align-items: center;
+                     text-align: center;
+    
+                     color: #002947;
+                }
+                span{
+                    position: absolute;
+                    width: 15px;
+                    height: 9px;
+                    left: 27px;
+                    top: 60px;
+                    
+                    font-family: 'Archivo';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 8px;
+                    line-height: 9px;
+                    
+                    
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                    
+                    color: #FFFDFD;
+                    
+                }
+               }
+              
+               
+            }
+            .allRounder{
+                z-index: 4;
+                display: flex;
+                flex-direction: column;
+                justify-items: center;
+                
+            .player1{
+                z-index: 3;
+                position: absolute;
+                top: 240px;
+                left:90px;
+               
+                img{
+                    position: absolute;
+                    width: 31px;
+                    height: 40px;
+                    left: 20px;
+                    top: 4px;
+                }
+                p{
+                    position: absolute;
+                    height: 17px;
+                    left: 5px;
+                    top: 33px;
+                    width: 60px;
+                    background: #FFFFFF;
+                    border-radius: 3px;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 8px;
+                    line-height: 9px;
+                     justify-content: center;
+                    display: flex;
+                     align-items: center;
+                     text-align: center;
+    
+                     color: #002947;
+                }
+                span{
+                    position: absolute;
+                    width: 15px;
+                    height: 9px;
+                    left: 27px;
+                    top: 60px;
+                    
+                    font-family: 'Archivo';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 8px;
+                    line-height: 9px;
+                    
+                    
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                    
+                    color: #FFFDFD;
+                    
+                }
+            }
+            .player2{
+                z-index: 3;
+                position: absolute;
+                top: 240px;
+                left:180px;
+                img{
+                    position: absolute;
+                    width: 31px;
+                    height: 40px;
+                    left: 20px;
+                    top: 4px;
+                }
+                p{
+                    position: absolute;
+                    height: 17px;
+                    left: 5px;
+                    top: 33px;
+                    width: 60px;
+                    background: #FFFFFF;
+                    border-radius: 3px;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 8px;
+                    line-height: 9px;
+    
+                     justify-content: center;
+                    display: flex;
+                     align-items: center;
+                     text-align: center;
+    
+                     color: #002947;
+                }
+                span{
+                    position: absolute;
+                    width: 15px;
+                    height: 9px;
+                    left: 27px;
+                    top: 60px;
+                    
+                    font-family: 'Archivo';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 8px;
+                    line-height: 9px;
+                    
+                    
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                    
+                    color: #FFFDFD;
+                    
+                }
+            }
+              
+              
+               
+            }
+        }
+        
+    
+       
+        
+      }
+
+}
+
+.playerAdded{
+    background: #edf2f3;
+    border-radius: 6px;
+}
+
+@media only screen and (max-width: 500px){
+.main-container{
+    min-height: 100vh;
+    left: 0;
+    right: 0;
+    >.info-bar{
+        top:250px;
+    }
+    >footer{
+        bottom: 40px;
+        right: 20px;
+    }
+    >.player-table>.table{
+        top:120px;
+    }
+    >.field{
+        top: 120px;
+    }
+}
+}

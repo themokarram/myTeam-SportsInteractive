@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Team</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="main-container">
+      <nav class="navbar">
+        <span class="nav-icon">
+          <i class="fa-solid fa-arrow-left" style="color: #ffffff"></i>
+        </span>
+        <span class="title">My Team</span>
+        <span class="time-left">1h26m Left</span>
+        <span class="nav-icon">
+          <i class="fa-regular fa-circle-question" style="color: #ffffff"></i>
+        </span>
+      </nav>
+      <div class="teams">
+        <div class="first-team">
+          <img src="./india.jpg" alt="india" class="flag" />
+          <span><p>INDIA</p></span>
+          <span class="player-no">6</span>
+        </div>
+        <div class="second-team">
+          <img src="./newZee.jpg" alt="newZee" class="flag" />
+          <span><p>NEW ZEALAND</p></span>
+          <span class="player-no">5</span>
+        </div>
+      </div>
+      <div class="info-bar">
+        <span class="credits-left">
+          <label>45 Credit Left</label>
+          <input type="range" name="credits" id="credits" min="0" max="100" />
+        </span>
+        <span class="player-left">
+          <label>7/11 Players</label>
+          <input
+            type="range"
+            name="players"
+            id="players"
+            step="100/11"
+            value="7"
+            min="0"
+            max="11"
+            oninput="rangeValue.innerText = this.value"
+          />
+        </span>
+        <span class="glider">
+          <p id="list" style="color: #ffffff">
+            <i class="fa-solid fa-square-list" style="color: #ffffff"></i>
+            List
+          </p>
+          <p id="pitch" style="color: #ffffff">
+            <i class="fa-solid fa-cricket-bat-ball" style="color: #ffffff"></i>
+            Pitch
+          </p>
+        </span>
+      </div>
+      <div class="player-table" id="playerTable">
+        <table class="table" style="overflow: hidden">
+          <thead>
+            <tr class="table-heading">
+              <th>Players</th>
+              <th>Points</th>
+              <th>Credits</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr id="table-body1">
+              <td
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                "
+              >
+                <img src="indT.jpg" alt="tee" class="teeShirt" />
+                <div
+                  style="
+                    height: 42px;
+                    margin-left: 10px;
+                    margin-top: -20px;
+                    text-align: start;
+                  "
+                >
+                  <p style="font-weight: 500; font-size: 16px; width: 80px">
+                    V Kohli
+                  </p>
+                  <p
+                    style="
+                      font-weight: 400;
+                      font-size: 12px;
+                      width: 80px;
+                      color: #5e7484;
+                      margin-top: -15px;
+                    "
+                  >
+                    IND
+                  </p>
+                </div>
+              </td>
+              <td>325</td>
+              <td>11.5</td>
+              <td>
+                <i
+                  onclick="handleplus()"
+                  id="plusicon1"
+                  class="fa-solid fa-circle-plus"
+                  style="color: #57e723"
+                  ;
+                ></i>
+                <i
+                  onclick="handleminus()"
+                  class="fa-sharp fa-solid fa-circle-minus"
+                  style="color: #dc1818; display: none"
+                  id="minusicon1"
+                ></i>
+              </td>
+            </tr>
+            <tr id="table-body2">
+              <td
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                "
+              >
+                <img src="indT.jpg" alt="tee" class="teeShirt" />
+                <div
+                  style="
+                    height: 42px;
+                    margin-left: 10px;
+                    margin-top: -20px;
+                    text-align: start;
+                  "
+                >
+                  <p style="font-weight: 500; font-size: 16px; width: 80px">
+                    R Sharma
+                  </p>
+                  <p
+                    style="
+                      font-weight: 400;
+                      font-size: 12px;
+                      width: 80px;
+                      color: #5e7484;
+                      margin-top: -15px;
+                    "
+                  >
+                    IND
+                  </p>
+                </div>
+              </td>
+              <td>256</td>
+              <td>10.5</td>
+              <td>
+                <i
+                  onclick="handleplus2()"
+                  id="plusicon2"
+                  class="fa-solid fa-circle-plus"
+                  style="color: #57e723"
+                  ;
+                ></i>
+                <i
+                  onclick="handleminus2()"
+                  class="fa-sharp fa-solid fa-circle-minus"
+                  style="color: #dc1818; display: none"
+                  id="minusicon2"
+                ></i>
+              </td>
+            </tr>
+            <tr id="table-body3">
+              <td
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                "
+              >
+                <img src="nzT.jpg" alt="tee" class="teeShirt" />
+                <div
+                  style="
+                    height: 42px;
+                    margin-left: 10px;
+                    margin-top: -20px;
+                    text-align: start;
+                  "
+                >
+                  <p style="font-weight: 500; font-size: 16px; width: 90px">
+                    J Neesham
+                  </p>
+                  <p
+                    style="
+                      font-weight: 400;
+                      font-size: 12px;
+                      width: 80px;
+                      color: #5e7484;
+                      margin-top: -15px;
+                    "
+                  >
+                    NZ
+                  </p>
+                </div>
+              </td>
+              <td>186</td>
+              <td>10.5</td>
+              <td>
+                <i
+                  onclick="handleplus3()"
+                  id="plusicon3"
+                  class="fa-solid fa-circle-plus"
+                  style="color: #57e723"
+                  ;
+                ></i>
+                <i
+                  onclick="handleminus3()"
+                  class="fa-sharp fa-solid fa-circle-minus"
+                  style="color: #dc1818; display: none"
+                  id="minusicon3"
+                ></i>
+              </td>
+            </tr>
+            <tr id="table-body4">
+              <td
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                "
+              >
+                <img src="nzT.jpg" alt="tee" class="teeShirt" />
+                <div
+                  style="
+                    height: 42px;
+                    margin-left: 10px;
+                    margin-top: -20px;
+                    text-align: start;
+                  "
+                >
+                  <p style="font-weight: 500; font-size: 16px; width: 100px">
+                    K Williamson
+                  </p>
+                  <p
+                    style="
+                      font-weight: 400;
+                      font-size: 12px;
+                      width: 80px;
+                      color: #5e7484;
+                      margin-top: -15px;
+                    "
+                  >
+                    NZ
+                  </p>
+                </div>
+              </td>
+              <td>386</td>
+              <td>10</td>
+              <td>
+                <i
+                  onclick="handleplus4()"
+                  id="plusicon4"
+                  class="fa-solid fa-circle-plus"
+                  style="color: #57e723"
+                  ;
+                ></i>
+                <i
+                  onclick="handleminus4()"
+                  class="fa-sharp fa-solid fa-circle-minus"
+                  style="color: #dc1818; display: none"
+                  id="minusicon4"
+                ></i>
+              </td>
+            </tr>
+            <tr id="table-body5">
+              <td
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                "
+              >
+                <img src="indT.jpg" alt="tee" class="teeShirt" />
+                <div
+                  style="
+                    height: 42px;
+                    margin-left: 10px;
+                    margin-top: -20px;
+                    text-align: start;
+                  "
+                >
+                  <p style="font-weight: 500; font-size: 16px; width: 90px">
+                    M Agarwal
+                  </p>
+                  <p
+                    style="
+                      font-weight: 400;
+                      font-size: 12px;
+                      width: 80px;
+                      color: #5e7484;
+                      margin-top: -15px;
+                    "
+                  >
+                    IND
+                  </p>
+                </div>
+              </td>
+              <td>226</td>
+              <td>9</td>
+              <td>
+                <i class="fa-solid fa-circle-plus" style="color: #57e723"></i>
+              </td>
+            </tr>
+            <tr id="table-body6">
+              <td
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                "
+              >
+                <img src="nzT.jpg" alt="tee" class="teeShirt" />
+                <div
+                  style="
+                    height: 42px;
+                    margin-left: 10px;
+                    margin-top: -20px;
+                    text-align: start;
+                  "
+                >
+                  <p style="font-weight: 500; font-size: 16px; width: 90px">
+                    M Guptil
+                  </p>
+                  <p
+                    style="
+                      font-weight: 400;
+                      font-size: 12px;
+                      width: 80px;
+                      color: #5e7484;
+                      margin-top: -15px;
+                    "
+                  >
+                    NZ
+                  </p>
+                </div>
+              </td>
+              <td>158</td>
+              <td>8.5</td>
+              <td>
+                <i
+                  onclick="handleplus6()"
+                  id="plusicon6"
+                  class="fa-solid fa-circle-plus"
+                  style="color: #57e723"
+                  ;
+                ></i>
+                <i
+                  onclick="handleminus6()"
+                  class="fa-sharp fa-solid fa-circle-minus"
+                  style="color: #dc1818; display: none"
+                  id="minusicon6"
+                ></i>
+              </td>
+            </tr>
+            <tr id="table-body7">
+              <td
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                "
+              >
+                <img src="indT.jpg" alt="tee" class="teeShirt" />
+                <div
+                  style="
+                    height: 42px;
+                    margin-left: 10px;
+                    margin-top: -20px;
+                    text-align: start;
+                  "
+                >
+                  <p style="font-weight: 500; font-size: 16px; width: 90px">
+                    MS Dhoni
+                  </p>
+                  <p
+                    style="
+                      font-weight: 400;
+                      font-size: 12px;
+                      width: 80px;
+                      color: #5e7484;
+                      margin-top: -15px;
+                    "
+                  >
+                    IND
+                  </p>
+                </div>
+              </td>
+              <td>350</td>
+              <td>11.5</td>
+              <td>
+                <i
+                  onclick="handleplus7()"
+                  id="plusicon7"
+                  class="fa-solid fa-circle-plus"
+                  style="color: #57e723"
+                  ;
+                ></i>
+                <i
+                  onclick="handleminus7()"
+                  class="fa-sharp fa-solid fa-circle-minus"
+                  style="color: #dc1818; display: none"
+                  id="minusicon7"
+                ></i>
+              </td>
+            </tr>
+            <tr id="table-body8">
+              <td
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                "
+              >
+                <img src="indT.jpg" alt="tee" class="teeShirt" />
+                <div
+                  style="
+                    height: 42px;
+                    margin-left: 10px;
+                    margin-top: -20px;
+                    text-align: start;
+                  "
+                >
+                  <p style="font-weight: 500; font-size: 16px; width: 80px">
+                    H Pandya
+                  </p>
+                  <p
+                    style="
+                      font-weight: 400;
+                      font-size: 12px;
+                      width: 80px;
+                      color: #5e7484;
+                      margin-top: -15px;
+                    "
+                  >
+                    IND
+                  </p>
+                </div>
+              </td>
+              <td>218</td>
+              <td>9.5</td>
+              <td>
+                <i
+                  onclick="handleplus8()"
+                  id="plusicon8"
+                  class="fa-solid fa-circle-plus"
+                  style="color: #57e723"
+                  ;
+                ></i>
+                <i
+                  onclick="handleminus8()"
+                  class="fa-sharp fa-solid fa-circle-minus"
+                  style="color: #dc1818; display: none"
+                  id="minusicon8"
+                ></i>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <footer>
+        <p><i class="fa-solid fa-sliders" style="color: #fafafa"></i></p>
+        <button id="buttonContinue" onclick="handleContinue()">continue</button>
+      </footer>
+
+      <div class="field" id="fieldpitch">
+        <span class="field-strip1"></span><span class="field-strip2"></span
+        ><span class="field-strip3"></span><span class="field-strip4"></span
+        ><span class="field-strip5"></span>
+        <span class="boundary">
+          <span class="field-pitch">
+            <span class="wicket"></span>
+          </span>
+        </span>
+        <div class="teamPlayer">
+          <span class="wicketkeeper">
+            <span class="player">
+              <h3
+                style="
+                  position: absolute;
+                  width: 73px;
+                  height: 10px;
+                  top: -25px;
+
+                  font-weight: 500;
+                  font-size: 8px;
+                  line-height: 10px;
+
+                  text-align: center;
+                  letter-spacing: 0.125px;
+
+                  color: #ffffff;
+
+                  mix-blend-mode: normal;
+                  opacity: 0.7;
+                "
+              >
+                WICKET KEEPER
+              </h3>
+              <img src="indT.jpg" alt="Tee" />
+              <p>MS Dhoni</p>
+              <span>11Cr</span>
+            </span>
+          </span>
+          <span class="batsman">
+            <span class="player1">
+              <h3
+                style="
+                  position: absolute;
+                  width: 73px;
+                  left: 140px;
+                  top: -25px;
+
+                  font-weight: 500;
+                  font-size: 8px;
+                  line-height: 10px;
+
+                  text-align: center;
+                  letter-spacing: 0.125px;
+
+                  color: #ffffff;
+
+                  mix-blend-mode: normal;
+                  opacity: 0.7;
+                "
+              >
+                BATSMAN
+              </h3>
+              <img src="indT.jpg" alt="Tee" />
+              <p>R Sharma</p>
+              <span>10.5Cr</span>
+            </span>
+            <span class="player2">
+              <img src="nzT.jpg" alt="Tee" />
+              <p>R Tylor</p>
+              <span>9Cr</span>
+            </span>
+            <span class="player3">
+              <img src="nzT.jpg" alt="Tee" />
+              <p>K Williamson</p>
+              <span>10Cr</span>
+            </span>
+            <span class="player4">
+              <img src="indT.jpg" alt="Tee" />
+              <p>V Kohli</p>
+              <span>11Cr</span>
+            </span>
+            <span class="player5">
+              <img src="indT.jpg" alt="Tee" />
+              <p>S Gill</p>
+              <span>7 Cr</span>
+            </span>
+          </span>
+
+          <span class="allRounder">
+            <span class="player1">
+              <h3
+                style="
+                  position: absolute;
+                  width: 73px;
+                  left: 50px;
+                  top: -25px;
+
+                  font-weight: 500;
+                  font-size: 8px;
+                  line-height: 10px;
+
+                  text-align: center;
+                  letter-spacing: 0.125px;
+
+                  color: #ffffff;
+
+                  mix-blend-mode: normal;
+                  opacity: 0.7;
+                "
+              >
+                ALL ROUNDERS
+              </h3>
+              <img src="indT.jpg" alt="Tee" />
+              <p>H Pandya</p>
+              <span>8 Cr</span>
+            </span>
+            <span class="player2">
+              <img src="nzT.jpg" alt="Tee" />
+              <p>J Neesham</p>
+              <span>7.5Cr</span>
+            </span>
+          </span>
+
+          <span class="bowler">
+            <span class="player1">
+              <h3
+                style="
+                  position: absolute;
+                  width: 73px;
+                  left: 70px;
+                  top: -25px;
+
+                  font-weight: 500;
+                  font-size: 8px;
+                  line-height: 10px;
+
+                  text-align: center;
+                  letter-spacing: 0.125px;
+
+                  color: #ffffff;
+
+                  mix-blend-mode: normal;
+                  opacity: 0.7;
+                "
+              >
+                BOWLERS
+              </h3>
+              <img src="nzT.jpg" alt="Tee" />
+              <p>T Southee</p>
+              <span>8Cr</span>
+            </span>
+            <span class="player2">
+              <img src="indT.jpg" alt="Tee" />
+              <p>M Sami</p>
+              <span>9Cr</span>
+            </span>
+            <span class="player3">
+              <img src="nzT.jpg" alt="Tee" />
+              <p>M Henry</p>
+              <span>6Cr</span>
+            </span>
+          </span>
+        </div>
+      </div>
+    </div>
+    <script src="MyTeam.js"></script>
+  </body>
+</html>
